@@ -43,18 +43,18 @@ const EmailForm = ({email, onSaveClick, onChange}) => {
           isValid={isToValid}
         />
         <EmailTextInput
-          name="cc*"
+          name="cc"
           value={email.cc.join(',')}
           type={"text"}
-          description={"CC's email, separated by ,"}
+          description={"(Optional) CC's email, separated by ,"}
           onChange={onChange}
           isValid={isCcValid}
         />
         <EmailTextInput
-          name="bcc*"
+          name="bcc"
           value={email.bcc.join(',')}
           type={"text"}
-          description={"CC's email, separated by ,"}
+          description={"(Optional) Bcc's email, separated by ,"}
           onChange={onChange}
           isValid={isBccValid}
         />

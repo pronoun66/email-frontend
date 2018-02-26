@@ -35,9 +35,9 @@ describe('<EmailForm />', () => {
     expect(allInputs.at(0).props().value).toEqual(email.from);
     expect(allInputs.at(1).props().name).toEqual('to');
     expect(allInputs.at(1).props().value).toEqual(email.to.join(','));
-    expect(allInputs.at(2).props().name).toEqual('cc*');
+    expect(allInputs.at(2).props().name).toEqual('cc');
     expect(allInputs.at(2).props().value).toEqual(email.cc.join(','));
-    expect(allInputs.at(3).props().name).toEqual('bcc*');
+    expect(allInputs.at(3).props().name).toEqual('bcc');
     expect(allInputs.at(3).props().value).toEqual(email.bcc.join(','));
     expect(allInputs.at(4).props().name).toEqual('subject');
     expect(allInputs.at(4).props().value).toEqual(email.subject);
